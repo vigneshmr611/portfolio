@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vignesh M.R - Electronics & Communication Engineering Student | Frontend Developer">
+    <title>Vignesh| Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <!-- <div class="loader">
+        <div class="loader-content">
+            <h1 class="loader-text">VIGNESH M.R</h1>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+ -->
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>VIGNESH</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="magnetic" data-strength="20">Home</a></li>
+                <li><a href="#about" class="magnetic" data-strength="20">About</a></li>
+                <li><a href="#skills" class="magnetic" data-strength="20">Skills</a></li>
+                <li><a href="#projects" class="magnetic" data-strength="20">Projects</a></li>
+                <li><a href="#contact" class="magnetic" data-strength="20">Contact</a></li>
+            </ul>
+            <div class="nav-utils">
+                <button id="theme-toggle" class="magnetic" data-strength="40" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app-wrapper">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Vignesh M.R</h1>
+                <p class="hero-tagline">Electronics & Communication Engineering Student <br> <span class="highlight">| Frontend Developer |</span></p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary magnetic" data-strength="50">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary magnetic" data-strength="50">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content grid-container">
+                <div class="about-text">
+                    <p class="reveal-text">
+                        I'm <strong>Vignesh M.R</strong>, currently pursuing a Bachelor's degree in Electronics and Communication Engineering. I'm passionate about building modern web applications and exploring new technologies.
+                    </p>
+                    <p class="reveal-text">
+                        I enjoy creating smooth, user-friendly interfaces and constantly improving my development skills. My goal is to bridge the gap between hardware and software by crafting digital experiences that are intuitive, fast, and visually stunning.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Problem Solver</span>
+                        <span class="tag">Tech Enthusiast</span>
+                        <span class="tag">Continuous Learner</span>
+                    </div>
+                </div>
+                <!-- Abstract Floating Element for About Section -->
+                <div class="about-visual">
+                    <div class="abstract-shape shape-1"></div>
+                    <div class="abstract-shape shape-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-bar" data-width="95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-bar" data-width="80%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-container">
+                <!-- Single Project as requested -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Mocking an image background via CSS, since no specific image exists -->
+                        <div class="">
+                           <img src="image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">A responsive and animated personal portfolio website built using modern web technologies, featuring smooth scrolling, interactive elements, and a dynamic antigravity design system.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>Vanilla CSS</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                        <a href="#" class="btn btn-outline" target="_blank">View Live <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-container grid-container">
+                <div class="contact-info">
+                    <h3>Let's connect</h3>
+                    <p>Whether you have a question, a project idea, or just want to say hi, feel free to drop a message!</p>
+                    
+                    <div class="social-links">
+                        <a href="mailto:vigneshmr611@gmail.com" class="social-btn magnetic" data-strength="30" target="_blank" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="social-tooltip">Email</div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vignesh-mr-1253602b5/" class="social-btn magnetic" data-strength="30" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div class="social-tooltip">LinkedIn</div>
+                        </a>
+                        <a href="https://github.com/vigneshmr611" class="social-btn magnetic" data-strength="30" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <div class="social-tooltip">GitHub</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit magnetic" data-strength="40">
+                            <span class="submit-text">Send Message</span>
+                            <i class="fa-solid fa-paper-plane submit-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">Vignesh M.R</h2>
+            <p class="footer-text">Designing the future, one pixel at a time.</p>
+            <p class="copyright">&copy; <span id="current-year"></span> Vignesh M.R. All rights reserved.</p>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <!-- Libraries -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
